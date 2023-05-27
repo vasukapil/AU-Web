@@ -15,10 +15,48 @@ import OurTeamContainer from "../OurTeamContainer";
 import AssistantIcon from "@mui/icons-material/Assistant";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
 import GroupsIcon from "@mui/icons-material/Groups";
+import ArrowRightAltRoundedIcon from '@mui/icons-material/ArrowRightAltRounded';
+import InfoIcon from "@mui/icons-material/Info";
+import DoubleArrowRoundedIcon from '@mui/icons-material/DoubleArrowRounded';
+import TocRoundedIcon from '@mui/icons-material/TocRounded';
+import './Home.css'
+import Analytics from "./Analytics";
 
 const HomePageContainer = () => {
+
+  const styl = {
+    width: "22%",
+    minWidth: "250px",
+    height: '230px',
+    margin: "10px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    border: '1px solid #002d62',
+    
+    borderRadius: "8px",
+    padding: "20px",
+    "&:hover": {
+      cursor: "pointer",
+      color: "rgb(253, 185, 19) !important",
+      backgroundColor:"#5282b8",
+    }
+  }
+
+  const serviceItems = [
+    { key: "Home", url: "", icon: ManageSearchIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "About", url: "", icon: AssistantIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "Services", url: "", icon: GroupsIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "Contact Us", url: "", icon: SupervisedUserCircleIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "Carrier", url: "", icon: InfoIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "Our Team", url: "", icon: ManageSearchIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "Our Team", url: "", icon: ManageSearchIcon, desc: "This is the searvice description of the compnay that will be updated soon." },
+    { key: "Our Team", url: "", icon: TocRoundedIcon, desc: "See all the sevice on this page" },
+  ];
   return (
-    <Box>
+    <>
+    <Box sx={{background:'white'}}>
       <CardMedia
         component="video"
         sx={{
@@ -36,6 +74,7 @@ const HomePageContainer = () => {
         autoPlay
         muted
       ></CardMedia>
+      <img src="https://www.crowe.com/-/media/crowe/llp/main-images/advisory/main-header-full-advisory-overview-168034845.jpg?rev=0cccd6ff56694cf0b017364723fb46a9&w=1920&hash=DCBF62C3E6AD95066944FC58422F423E" className="img_css" />
       {/* <video
         style={{
           top: "59px",
@@ -50,91 +89,89 @@ const HomePageContainer = () => {
         autoPlay
         muted
       ></video> */}
-      <Grid sx={{ padding: "40px 0", display: "flex", background: "#f2f2f2" }}>
-        <Box sx={{ width: "40%", display: "flex" }}>
-          <Divider
-            sx={{
-              margin: "0 40px",
-              width: "5px",
-              height: "100%",
-              background: "rgb(253, 185, 19)",
-            }}
-          />
-          <Box>
-            <Typography variant="h4">Our Services</Typography>
-            <Typography
-              align="left"
-              variant="h6"
-              sx={{ fontWeight: "bold", color: "rgb(102, 102, 102)" }}
+      <Box sx={{ display: "flex", flexDirection: "column", alignItems: 'center', justifyContent: 'center', padding: "5% 5%" , backgroundColor: "#fff",}}>
+        <Typography variant="h4" sx={{
+          width: "250px",
+          // height: "6px",
+          borderRadius: 12,
+          display: 'flex',
+          flexDirection: "column",
+           justifyContent: 'center', 
+           alignItems: "center"
+          // background: "rgb(253, 185, 19)",
+        }}>Our Services
+          <Divider sx={{
+            width: "250px",
+            marginTop:"5px",
+            height: "6px",
+            borderRadius: 12,
+            background: "rgb(253, 185, 19)",
+          }} />
+        </Typography>
+        <Typography
+          align="left"
+          variant="h6"
+          sx={{ fontWeight: "bold", color: "rgb(102, 102, 102)", paddingTop: "20px",background:'white' }}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          sagittis sem quis accumsan vehicula. Integer vitae enim nec enim
+          porta ullamcorper. Nunc
+        </Typography>
+      </Box>
+
+      <Box sx={{ margin: "5% 5%", display: "flex", background: "#ffffff", alignItems: 'center', justifyContent: 'center', width: "90%", flexWrap: "wrap" }}>
+
+        {serviceItems?.map((data, index) => (
+          <Box
+            sx={styl}
+            className='cardDiv'
+          >
+            {/* <IconButton> */}
+            <data.icon sx={{ height: "40px", width: "50px", color: '#002d62' }} className="cardDivText"/>
+            {/* </IconButton> */}
+            {serviceItems.length != index + 1 && <Typography
+              sx={{ fontWeight: "bold", color: "rgb(10, 19, 69)", paddingTop: "5px" }}
+              className="cardDivText"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sagittis sem quis accumsan vehicula. Integer vitae enim nec enim
-              porta ullamcorper. Nunc
+              Service-{index}
+            </Typography>}
+            {serviceItems.length == index + 1 && <Typography
+              sx={{ fontWeight: "bold", color: "rgb(10, 19, 69", paddingTop: "5px" }}
+              className="cardDivText"
+            >
+              All Services
+            </Typography>}
+            <Typography
+              sx={{ fontWeight: "700", color: "rgb(82, 82, 85)", paddingTop: "5px", fontSize: "14px" }}
+              className="cardDivText"
+            >
+              {data?.desc}
             </Typography>
+            {serviceItems.length != index + 1 && <Typography
+              sx={{ fontWeight: "bold", color: "002d62", paddingTop: "20px", display: 'flex', alignItems: 'center', justifyContent: "flex-start", width: "80%" }}
+              className="cardDivText2"
+            >
+
+              <div> Read more</div>
+              <DoubleArrowRoundedIcon style={{ fontSize: "20px", fontWeight: 'bold' }} />
+            </Typography>}
+            {serviceItems.length == index + 1 && <Typography
+              sx={{ fontWeight: "bold", color: "002d62", paddingTop: "20px", display: 'flex', alignItems: 'center', justifyContent: "flex-start", width: "80%" }}
+              className="cardDivText2"
+            >
+
+              <div>Click here</div>
+              <DoubleArrowRoundedIcon style={{ fontSize: "20px", fontWeight: 'bold' }} />
+            </Typography>}
           </Box>
-        </Box>
-        <Box
-          sx={{
-            width: "15%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <IconButton>
-            <ManageSearchIcon sx={{ height: "100px", width: "100px" }} />
-          </IconButton>
-          Service1
-        </Box>
-        <Box
-          sx={{
-            width: "15%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <IconButton>
-            <AssistantIcon sx={{ height: "100px", width: "100px" }} />
-          </IconButton>
-          Service1
-        </Box>
-        <Box
-          sx={{
-            width: "15%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <IconButton>
-            <GroupsIcon sx={{ height: "100px", width: "100px" }} />
-          </IconButton>
-          Service1
-        </Box>
-        <Box
-          sx={{
-            width: "15%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <IconButton>
-            <SupervisedUserCircleIcon
-              sx={{ height: "100px", width: "100px" }}
-            />
-          </IconButton>
-          Service1
-        </Box>
-      </Grid>
+        ))}
+
+      </Box>
       <OurTeamContainer />
+    </Box >
+      <Analytics/>
       <ContactUsContainer />
-    </Box>
+      </>
   );
 };
 

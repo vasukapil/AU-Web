@@ -5,7 +5,7 @@ import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import React from "react";
 import { Box } from "@mui/material";
-
+import Button from '@mui/material'
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
@@ -65,7 +65,7 @@ export const ContactUsContainer = () => {
     <>
       <section className=" bg-white dark: bg-zinc-200">
         <div className="container px-6 py-10 mx-auto">
-          <div className="lg:flex lg:items-center lg:-mx-10">
+          <div className="lg:flex lg:items-space-around lg:-mx-10">
             <div className="lg:w-1/2 lg:mx-10">
               <h1 className="text-3xl font-semibold text-slate-950 capitalize lg:text-4xl">
                 Request a Call Back
@@ -75,20 +75,20 @@ export const ContactUsContainer = () => {
                 Ask us everything and we would love to hear from you
               </p>
 
-              <form className="mt-12">
-                <Box>
+              <form className="mt-12 w-full">
+                <Box sx={{width:"100%",justifyItems:"center",alignItems:'flex-start'}}>
                   <TextField
-                    sx={{ background: "#ffffff", margin: "0 20px 0 0" }}
+                    sx={{ background: "#ffffff", margin: "0 20px 0 0",maxWidth:"250px",width:'100%' }}
                     type="text"
                     placeholder="Full Name"
                   ></TextField>
                   <TextField
-                    sx={{ background: "#ffffff", margin: "0 20px 0 0" }}
+                    sx={{ background: "#ffffff", margin: "0 0px 0 0" ,maxWidth:"250px",width:'100%'}}
                     type="email"
                     placeholder="johndoe@example.com"
                   ></TextField>
                 </Box>
-                <Box sx={{ padding: "20px 20px 20px 0" }}>
+                <Box sx={{ padding: "2% 2% 2% 0" ,maxWidth:"538px",width:'95%'}}>
                   <Autocomplete
                     sx={{
                       background: "#ffffff",
@@ -108,13 +108,13 @@ export const ContactUsContainer = () => {
                         Lorem ipsum
                       </li>
                     )}
-                    style={{ width: 500 }}
+                    style={{ }}
                     renderInput={(params) => (
                       <TextField {...params} placeholder="Select an Option" />
                     )}
                   />
                 </Box>
-                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-yellow-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50" style={{maxWidth:"538px",width:'95%'}}>
                   get in touch
                 </button>
               </form>

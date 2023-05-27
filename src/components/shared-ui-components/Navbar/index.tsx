@@ -25,6 +25,11 @@ import InfoIcon from "@mui/icons-material/Info";
 import CallIcon from "@mui/icons-material/Call";
 import HubIcon from "@mui/icons-material/Hub";
 import Diversity2Icon from "@mui/icons-material/Diversity2";
+import CallRoundedIcon from '@mui/icons-material/CallRounded';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import Navbar2 from "../NavbarSecond";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/Email';
 
 const navItems = [
   { key: "Home", url: "/", icon: HomeIcon },
@@ -106,40 +111,69 @@ const Navbar = (props: any) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box
-      sx={{
-        position: "sticky !important",
-        zIndex: "99 !important",
-        top: 0,
-        flexGrow: 1,
-        ".MuiAppBar-root": {
-          background: "#ffffff",
-          color: "#002d62 !important",
-        },
-      }}
-    >
-      <AppBar position="static">
-        <Toolbar>
-          {!deskTopView && (
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-          )}
-          <CardMedia
-            component="img"
-            src={Logo}
-            sx={{ height: "26px", width: "36px" }}
-          />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            AU Corporate
-          </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+    <>
+      <Box
+        sx={{
+          position: "sticky !important",
+          zIndex: "99 !important",
+          top: 0,
+          flexGrow: 1,
+          ".MuiAppBar-root": {
+            background: "#ffffff",
+            color: "#002d62 !important",
+          },
+        }}
+      >
+        <AppBar position="sticky" sx={{
+          justifyContent: "center",
+          height: "60px"
+        }}>
+          <Toolbar>
+            {!deskTopView && (
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: "none" } }}
+              >
+                <MenuIcon />
+              </IconButton>
+            )}
+            <CardMedia
+              component="img"
+              src={Logo}
+              sx={{ height: "26px", width: "36px" }}
+            />
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              AU Corporate
+            </Typography>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              {/* <Button></Button> */}
+              <Typography component="div" sx={{
+                flexGrow: 1, fontSize: "14px", "&:hover": {
+                  cursor: "pointer",
+                  color: "rgb(253, 185, 19)"
+                },
+              }}>
+                <CallRoundedIcon />  +91 6396894543
+              </Typography>
+            </Box>
+            <Box sx={{ display: { xs: "none", sm: "flex", alignItems: 'center' } }}>
+              {/* <Button></Button> */}
+              <Typography component="div" sx={{ flexGrow: 1, margin: "0 12px" }}>
+                <HomeIcon />
+              </Typography>
+              <Typography component="div" sx={{ flexGrow: 1, maxWidth: "150px", maxHeight: "50px", fontSize: "14px", marginRight: "12px" }}>
+                Near Digital 360, Nehru Colony, Dehrdun
+              </Typography>
+            </Box>
+            {/* <Typography component="div" sx={{ flexGrow: 1,color:'rgb(253, 185, 19)' }}>
+              <EmailIcon/>
+              <WhatsAppIcon />
+              <FacebookRoundedIcon />
+            </Typography> */}
+            {/* <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button
                 onClick={() => {
@@ -160,30 +194,33 @@ const Navbar = (props: any) => {
                 {item?.key}
               </Button>
             ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
+          </Box> */}
+          </Toolbar>
+
+        </AppBar>
+        <Box component="nav">
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </Box>
       </Box>
-    </Box>
+      <Navbar2 />
+    </>
   );
 };
 export default Navbar;

@@ -1,4 +1,4 @@
-import { Box, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, CardMedia, Grid, Typography, Divider } from "@mui/material";
 import React from "react";
 //@ts-ignore
 import Profile from "../../../assets/images/profile.jpg";
@@ -11,17 +11,40 @@ import Profile3 from "../../../assets/images/profile3.jpg";
 
 const OurTeamContainer = () => {
   return (
-    <Box>
-      <Box sx={{ textAlign: "center", padding: "20px" }}>
-        <Typography variant="h4">Our Strength</Typography>
-        <Typography variant="h6">
-          quae ab illo inventore veritatis et quasi architecto beatae vitae
-          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia
+    <Box sx={{paddingBottom:'30px' }}>
+      <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: "center", padding: "20px", margin:"5%",width:"90%",}}>
+        {/* <Typography variant="h4">Our Strength</Typography> */}
+        <Typography variant="h4" sx={{
+          width: "250px",
+          // height: "6px",
+          borderRadius: 12,
+          display: 'flex',
+           flexDirection: "column",
+            justifyContent: 'center', 
+            alignItems: "center"
+          // background: "rgb(253, 185, 19)",
+        }}>
+          Our Strength
+          <Divider sx={{
+            width: "250px",
+            height: "6px",
+            borderRadius: 12,
+            margin:"5px 0 15px 0",
+            background: "rgb(253, 185, 19)",
+          }} />
+        </Typography> 
+        <Typography
+          align="left"
+          variant="h6"
+          sx={{ fontWeight: "bold", color: "rgb(102, 102, 102)", paddingTop: "20px" }}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          sagittis sem quis accumsan vehicula. Integer vitae enim nec enim
+          porta ullamcorper. Nunc
         </Typography>
       </Box>
       <Grid
-        sx={{ padding: "40px", gap: "20px" }}
+        sx={{ gap: "20px",margin:"5%",width:"90%" }}
         display="flex"
         flexDirection="row"
         justifyContent="space-around"
