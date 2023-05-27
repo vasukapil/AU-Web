@@ -19,7 +19,7 @@ function Navbar2() {
         { key: "About", url: "/about-us", icon: InfoIcon },
         { key: "Services", url: "/services", icon: ManageSearchIcon },
         { key: "Contact Us", url: "/contact-us", icon: CallIcon },
-        { key: "Carrier", url: "/carrier", icon: HubIcon },
+        { key: "Career", url: "/career", icon: HubIcon },
         { key: "Our Team", url: "/team", icon: Diversity2Icon },
     ];
 
@@ -47,6 +47,7 @@ function Navbar2() {
                     <Button
                         onClick={() => {
                             navigate(String(item.url));
+                            window.scrollTo(0, 0)
                         }}
                         key={item.key}
                         sx={{
