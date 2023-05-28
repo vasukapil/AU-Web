@@ -1,0 +1,149 @@
+.serviceDiv {
+    background-color: #ffffff;
+    height: 100vh;
+
+}
+
+.Services {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boxService {
+    animation: boxService;
+    animation-duration: 4s;
+    position: absolute;
+    /* animation-delay: 2s; */
+    right: 10vw;
+}
+.boxServiceNone {
+    /* right: -12vw; */
+    display: none;
+}
+
+@keyframes boxService {
+    from {
+        right: -12vw;
+    }
+
+    to {
+        right: 10vw;
+    }
+}
+
+.boxService2 {
+    animation: boxService2;
+    animation-duration: 4s;
+    position: absolute;
+    /* animation-delay: 2s; */
+    right: 30vw;
+}
+
+@keyframes boxService2 {
+    from {
+        right: -12vw;
+    }
+
+    to {
+        right: 30vw;
+    }
+}
+
+.boxService3 {
+    animation: boxService3;
+    animation-duration: 4s;
+    position: absolute;
+    /* animation-delay: 2s; */
+    left: 10vw;
+}
+
+@keyframes boxService3 {
+    from {
+        left: -20vw;
+    }
+
+    to {
+        left: 10vw;
+    }
+}
+
+.boxService4 {
+    animation: boxService4;
+    animation-duration: 4s;
+    position: absolute;
+    /* animation-delay: 2s; */
+    left: 30vw;
+}
+
+@keyframes boxService4 {
+    from {
+        left: -12vw;
+    }
+
+    to {
+        left: 30vw;
+    }
+}
+
+@media(max-width:900px) {
+    .serviceDiv{
+        flex-direction: column;
+        background-color: #ffffff;
+        height: 270vh;
+      
+      }
+      .Services{
+        display: flex;
+        flex-direction: column;
+      }
+      .boxService{
+        margin-top:0;
+        right: calc(50vw - 105px);
+      }
+      @keyframes boxService {
+        from {
+          right: -100vw;
+        }
+        to {
+          right: calc(50vw - 105px);
+        }
+      }
+      
+      .boxService2 {
+        margin-top:50vh;
+        right: calc(50vw - 105px);
+      }
+      @keyframes boxService2 {
+        from {
+          right: -59vw;
+        }
+        to {
+            right: calc(50vw - 105px);
+        }
+      }
+      .boxService3 {
+        margin-top:100vh;
+        left: calc(50vw - 105px);
+      }
+      @keyframes boxService3 {
+        from {
+          left: -100vw;
+        }
+        to {
+          left: calc(50vw - 105px);
+        }
+      }
+      .boxService4 {
+        margin-top:150vh;
+        left: calc(50vw - 105px);
+      }
+      @keyframes boxService4 {
+        from {
+          left: -100vw;
+        }
+        to {
+          left: calc(50vw - 120px);
+        }
+      }
+}

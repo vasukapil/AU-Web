@@ -8,6 +8,7 @@ import React from "react";
 import Contact from "../pages/Contact";
 import About from "../components/shared-containers/AboutUsContainer/About";
 import Careers from "../components/shared-containers/CareerContainer/Career";
+import Team from "../components/shared-containers/OurTeamContainer/Team";
 
 const router = createBrowserRouter(
   [
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
         { path: "/", element: <HomePage /> },
         { path: "/services", element: <Services /> },
         { path: "/about-us", element: <About /> },
-        { path: "/team", element: <WorkInProgress /> },
+        { path: "/team", element: <Team /> },
         { path: "/career", element: <Careers/> },
         { path: "/contact-us", element: <Contact /> },
       ],

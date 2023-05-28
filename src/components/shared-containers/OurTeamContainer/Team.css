@@ -1,0 +1,14 @@
+.Teams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .teams_boxesOut{
+    display: flex;
+    width: 100%;
+} */
+.teams_boxes{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+}

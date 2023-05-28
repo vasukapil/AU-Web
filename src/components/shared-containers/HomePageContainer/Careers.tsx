@@ -41,6 +41,9 @@ export const Careers = () => {
         <img
           src="https://bytesed.com//tf/attorg/assets/img/bg/cta-bg-01.jpg"
           alt="Background"
+          style={{
+            maxWidth:"100vw",margin:0,padding:0,
+          }}
         />
       </div>
     </section>
