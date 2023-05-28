@@ -37,7 +37,16 @@ const Team = () => {
     ]
     return (
         <div className='Teams'>
-            <img src="https://www.patidarmachine.com/images/our-team.jpg" />
+            <div className='animateDiv'>
+            <h2>Our teams</h2>
+            <h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ab optio architecto sit doloribus, 
+                <span className='not_mobile'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore 
+                </span>
+            </h4>
+            </div>
+            <img src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/2020-08/shutterstock_1731284125_0.jpg?itok=89UrdUt_" />
             <h1>Our Team</h1>
             <h1>Our Experienced Accountants</h1>
             <p>Sed tincidunt accumsan lacus nec bibendum sapien aliquet ut suspendisse pharetra. Finibus condimentum aenean lacinia sem metus Integer.</p>
