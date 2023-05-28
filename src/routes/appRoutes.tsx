@@ -6,6 +6,8 @@ import NotFound from "../pages/NotFound";
 import Services from "../pages/Services";
 import React from "react";
 import Contact from "../pages/Contact";
+import About from "../components/shared-containers/AboutUsContainer/About";
+import Careers from "../components/shared-containers/CareerContainer/Career";
 
 const router = createBrowserRouter(
   [
@@ -15,9 +17,9 @@ const router = createBrowserRouter(
       children: [
         { path: "/", element: <HomePage /> },
         { path: "/services", element: <Services /> },
-        { path: "/about-us", element: <WorkInProgress /> },
+        { path: "/about-us", element: <About /> },
         { path: "/team", element: <WorkInProgress /> },
-        { path: "/carrier", element: <WorkInProgress /> },
+        { path: "/career", element: <Careers/> },
         { path: "/contact-us", element: <Contact /> },
       ],
     },
