@@ -51,49 +51,57 @@ const HomePageContainer = () => {
       key: "Home",
       url: "",
       icon: ManageSearchIcon,
-      desc: "This is the searvice description of the compnay that will be updated soon.",
+      desc: "Corporate tax is levied on the companies, whether domestic or foreign. In India, the Income Tax Act..",
+      title : "Corporate Tax"
     },
     {
       key: "About",
       url: "",
       icon: AssistantIcon,
-      desc: "This is the searvice description of the compnay that will be updated soon.",
+      desc: "At AU, being one of the best Tax Litigation firms in Delhi, provide the best tax litigation services in Delhi",
+      title : "Income Tax Litigation Services"
     },
     {
       key: "Services",
       url: "",
       icon: GroupsIcon,
-      desc: "This is the searvice description of the compnay that will be updated soon.",
+      desc: "As a firm of Chartered Accountants, we at AU focus on providing the best consultancy for meeting your tax compliances on time",
+      title:"Direct & Indirect Tax"
     },
     {
       key: "Contact Us",
       url: "",
       icon: SupervisedUserCircleIcon,
-      desc: "This is the searvice description of the compnay that will be updated soon.",
+      desc: "We at AU help you in calculating your correct income tax payable or refundable",
+      title:"Income Tax Return Filings"
     },
     {
       key: "Career",
       url: "",
       icon: InfoIcon,
-      desc: "This is the searvice description of the compnay that will be updated soon.",
+      desc: "We are considered the best CA for NRI return filing in India and the best income tax consultant in Delhi",
+      title:"ITR Filing services at AU"
     },
     {
       key: "Our Team",
       url: "",
       icon: ManageSearchIcon,
       desc: "This is the searvice description of the compnay that will be updated soon.",
+      title:"Procedure for Assessment"
     },
     {
       key: "Our Team",
       url: "",
       icon: ManageSearchIcon,
       desc: "This is the searvice description of the compnay that will be updated soon.",
+      title:"GST Consultancy Services"
     },
     {
       key: "Our Team",
       url: "",
       icon: TocRoundedIcon,
-      desc: "See all the sevice on this page",
+      desc: "AU is among the best GST registration service providers in Delhi. Our range of services makes it seamless for you to comply with tax policies.",
+      title:"GST Audit"
     },
   ];
   return (
@@ -201,7 +209,7 @@ const HomePageContainer = () => {
                   }}
                   className="cardDivText"
                 >
-                  Service-{index}
+                  {data?.title}
                 </Typography>
               )}
               {serviceItems.length == index + 1 && (
