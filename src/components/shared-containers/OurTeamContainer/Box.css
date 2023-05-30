@@ -23,8 +23,8 @@
 
 .box:hover .box_img>img{
     animation-name: hoverBox;
-    transform: scale(1.3);
-    animation-duration: 1s;
+    transform: scale(1.1);
+    animation-duration: 0.3s;
 }
 
 .box_img {
@@ -43,7 +43,7 @@
     }
 
     to {
-        transform: scale(1.3);
+        transform: scale(1.1);
         /* box-shadow: 0 0 10px -2px #002d62; */
     }
 }

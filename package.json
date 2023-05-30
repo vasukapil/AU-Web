@@ -17,6 +17,7 @@
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@types/react-router-dom": "^5.3.3",
+    "aos": "^2.3.4",
     "install": "^0.13.0",
     "mdb-react-ui-kit": "^6.0.0",
     "npm": "^9.6.6",
