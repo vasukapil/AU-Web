@@ -64,7 +64,7 @@ export const ContactUsContainer = () => {
   return (
     <>
       <section className=" bg-white dark: bg-zinc-200">
-        <div className="container px-6 py-10 mx-auto">
+        <div  style={{paddingTop : "16px"}} className="container px-6 py-10 mx-auto">
           <div className="lg:flex lg:items-space-around lg:-mx-10">
             <div className="lg:w-1/2 lg:mx-10">
               <h1 className="text-3xl font-semibold text-slate-950 capitalize lg:text-4xl">
@@ -198,7 +198,7 @@ export const ContactUsContainer = () => {
               </div>
 
               <div className="mt-6 w-80 md:mt-8">
-                <h3 className="text-gray-600 dark:text-gray-300 ">Follow us</h3>
+                <h3 className="text-gray-600 dark:text-gray-700 ">Follow us</h3>
 
                 <div className="flex mt-4 -mx-1.5 ">
                   <a

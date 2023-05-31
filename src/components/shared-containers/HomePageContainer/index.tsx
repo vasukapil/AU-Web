@@ -136,9 +136,50 @@ const HomePageContainer = () => {
         >
           {/* HiksbdfkbasdasaS */}
         </CardMedia>
-        <div className='animateTextForHome'>
+        {/* <div className='animateTextForHome'>
           We offer expert financial services, auditing, tax planning, consulting, accounting solutions, and reliable financial reporting for businesses and individuals.
+        </div> */}
+        <div className="flex flex-row">
+        <div class="left-0 bottom-2 flex h-full w-full items-center justify-center bg-black py-10 pt-0 pb-2">
+  <div class="max-h-full max-w-xl overflow-y-auto sm:rounded-2xl w-[280px] h-[180px] relative -top-5 bg-[#002d62]">
+    <div class="w-full">
+      <div class="m-8 max-w-[400px]">
+        <div class="">
+          <h1 class="mb-4 text-3xl font-extrabold text-[#FDB913]">AU Corporate</h1>
+          {/* <p class="text-[#FDB913]">We offer expert financial services, auditing, tax planning, consulting, accounting solutions, and reliable financial reporting for businesses and individuals.</p> */}
         </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="left-0 top-25 flex h-full w-full items-center justify-center bg-black py-10 pt-0 pb-2">
+  <div class="max-h-full max-w-xl overflow-y-auto sm:rounded-2xl w-[280px] h-[180px] relative -top-5 bg-[#002d62]">
+    <div class="w-full">
+      <div class="m-8 max-w-[400px]">
+        <div class="">
+          <h1 class="mb-4 text-3xl font-extrabold text-[#FDB913]">AU Corporate</h1>
+          {/* <p class="text-gray-600">We offer expert financial services, auditing, tax planning, consulting, accounting solutions, and reliable financial reporting for businesses and individuals.</p> */}
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="left-0 top-25 flex h-full w-full items-center justify-center bg-black py-10 pt-0 pb-2">
+  <div class="max-h-full max-w-xl overflow-y-auto sm:rounded-2xl w-[280px] h-[180px] relative -top-5 bg-[#002d62]">
+    <div class="w-full">
+      <div class="m-8 max-w-[400px]">
+        <div class="">
+          <h1 class="mb-4 text-3xl font-extrabold text-[#FDB913]">AU Corporate</h1>
+          {/* <p class="text-gray-600">We offer expert financial services, auditing, tax planning, consulting, accounting solutions, and reliable financial reporting for businesses and individuals.</p> */}
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
         <img
           src="https://www.crowe.com/-/media/crowe/llp/main-images/advisory/main-header-full-advisory-overview-168034845.jpg?rev=0cccd6ff56694cf0b017364723fb46a9&w=1920&hash=DCBF62C3E6AD95066944FC58422F423E"
           className="img_css"

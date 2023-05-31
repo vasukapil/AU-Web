@@ -150,17 +150,21 @@ const Navbar = (props: any) => {
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {/* <Button></Button> */}
-              <Typography component="div" sx={{
-                flexGrow: 1, fontSize: "14px", "&:hover": {
+              <Box component="div" sx={{
+                flexGrow: 1, 
+                display : "flex",
+                alignItems : "center",
+                fontSize: "14px",
+                 "&:hover": {
                   cursor: "pointer",
-                  color: "rgb(253, 185, 19)"
+                  color: "rgb(253, 185, 19)",
+                  
                 },
               }}>
                 <CallRoundedIcon />  +91 6396894543
-              </Typography>
+              </Box>
             </Box>
-            <Box sx={{ display: { xs: "none", sm: "flex", alignItems: 'center' } }}>
-              {/* <Button></Button> */}
+            <Box sx={{ display: { xs: "none", sm: "flex", alignItems: 'center !important' } }}>
               <Typography component="div" sx={{ flexGrow: 1, margin: "0 12px" }}>
                 <HomeIcon />
               </Typography>

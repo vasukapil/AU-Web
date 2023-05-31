@@ -221,3 +221,23 @@
 .fade-exit-active {
   opacity: 0;
 }
+
+.overlay {
+  position: absolute;
+  top: 309px;
+  left : 60px;
+  width: 80%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-family: "Roboto", sans-serif; /* Replace with your desired font-family */
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}

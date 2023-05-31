@@ -72,6 +72,14 @@ If you are looking for the best corporate tax solutions firm in Centre of Delhi,
   `;
 
 
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+
     return (
         <Box sx={{
             display: 'flex', margin: '2rem', flexDirection: 'column'
@@ -107,7 +115,7 @@ If you are looking for the best corporate tax solutions firm in Centre of Delhi,
                     <List >
                         {ServicesData.map((data, index) => (
                             <ListItem key={data.title} disablePadding onClick={() => { setCurrentState(index) }}
-                                sx={{ backgroundColor: `${index === currentState ? '#808080' : '#FFFFF'}`, width: '19rem' }} >
+                                sx={{ backgroundColor: `${index === currentState ? '#DAA520' : '#FFFFF'}`, width: '19rem' }} >
                                 <ListItemButton>
                                     <ListItemText primary={data.title} sx={{ color: 'red !important' }} />
                                     <ListItemIcon sx={{
@@ -136,6 +144,9 @@ If you are looking for the best corporate tax solutions firm in Centre of Delhi,
 
                         {/* <ReactMarkdown>{markdownText}</ReactMarkdown> */}
                         <ReactMarkdown>{ServicesData[currentState].markdownText}</ReactMarkdown>
+                        <button className="scroll-to-top-button md:ml-[35%] bg-blue-500 text-white px-4 py-2 rounded-full shadow hover:bg-blue-600 transition-colors duration-300 cursor-pointer" onClick={handleScrollToTop}>
+                         Scroll to Top
+                        </button>
                     </Typography>
                 </Box>
             </Box>

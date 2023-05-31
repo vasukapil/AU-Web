@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -43,6 +43,9 @@ const Career = () => {
   const [cvFile, setCVFile] = useState(null);
   const [pictureFile, setPictureFile] = useState(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  },[])
   const handleSubmit = (e) => {
     e.preventDefault();
 

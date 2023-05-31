@@ -7,9 +7,9 @@ const Box = ({data}) => {
             <div className='box_img'>
             <img src={data?.img} alt=''/>
             </div>
-           <div className='divBox'> 
-            <h4>{data?.name}</h4>
-            <p>Senior Accountant</p>
+           <div className='divBox flex flex-col justify-center items-center'> 
+            <p className='mt-0'>{data?.name}</p>
+            <p className='mt-0'>Senior Accountant</p>
             </div>
         </div>
     )
