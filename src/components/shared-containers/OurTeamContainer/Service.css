@@ -1,7 +1,6 @@
 .serviceDiv {
     background-color: #ffffff;
     height: 100vh;
-
 }
 
 .Services {
@@ -15,7 +14,7 @@
     animation-duration: 4s;
     position: absolute;
     /* animation-delay: 2s; */
-    right: 10vw;
+    right: 14vw;
 }
 .boxServiceNone {
     /* right: -12vw; */
@@ -28,7 +27,7 @@
     }
 
     to {
-        right: 10vw;
+        right: 14vw;
     }
 }
 
@@ -37,7 +36,7 @@
     animation-duration: 4s;
     position: absolute;
     /* animation-delay: 2s; */
-    right: 30vw;
+    right: 33vw;
 }
 
 @keyframes boxService2 {
@@ -46,7 +45,7 @@
     }
 
     to {
-        right: 30vw;
+        right: 33vw;
     }
 }
 
@@ -55,7 +54,7 @@
     animation-duration: 4s;
     position: absolute;
     /* animation-delay: 2s; */
-    left: 10vw;
+    left: 14vw;
 }
 
 @keyframes boxService3 {
@@ -64,7 +63,7 @@
     }
 
     to {
-        left: 10vw;
+        left: 14vw;
     }
 }
 
@@ -73,7 +72,7 @@
     animation-duration: 4s;
     position: absolute;
     /* animation-delay: 2s; */
-    left: 30vw;
+    left: 33vw;
 }
 
 @keyframes boxService4 {
@@ -82,7 +81,7 @@
     }
 
     to {
-        left: 30vw;
+        left: 33vw;
     }
 }
 

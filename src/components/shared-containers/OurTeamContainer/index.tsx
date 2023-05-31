@@ -18,11 +18,11 @@ const OurTeamContainer = () => {
 
   useEffect(() => {
     if (divRef.current) {
-      const divHeight = divRef.current?.clientHeight;
+      const divHeight = divRef?.current?.clientHeight;
       setHeight(divHeight);
       // console.log(divHeight)
     }
-  }, [divRef.current?.clientHeight]);
+  }, [divRef?.current?.clientHeight]);
 
   // listen for scroll event and call animate function
   document.addEventListener('scroll', animate);
@@ -57,8 +57,8 @@ const OurTeamContainer = () => {
 
 
   return (
-    <div className="serviceDiv" ref={divRef}>
-      <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: "center", padding: "20px", margin: "5%", width: "90%", }}>
+    <div className="serviceDiv overflow-hidden" ref={divRef}>
+      <Box sx={{ display: 'flex', flexDirection: "column", justifyContent: 'center', alignItems: "center", padding: "20px", margin: "5%", width: "90%",overflow:'hidden'}}>
         {/* <Typography variant="h4">Our Strength</Typography> */}
         <Typography variant="h4" sx={{
           width: "250px",
@@ -82,7 +82,7 @@ const OurTeamContainer = () => {
         <Typography
           align="left"
           variant="h6"
-          sx={{ fontWeight: "bold", color: "rgb(102, 102, 102)", paddingTop: "20px" }}
+          sx={{ fontWeight: "bold", color: "rgb(102, 102, 102)", paddingTop: "15px" }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           sagittis sem quis accumsan vehicula. Integer vitae enim nec enim

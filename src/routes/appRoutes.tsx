@@ -9,7 +9,7 @@ import Contact from "../pages/Contact";
 import About from "../components/shared-containers/AboutUsContainer/About";
 import Careers from "../components/shared-containers/CareerContainer/Career";
 import Team from "../components/shared-containers/OurTeamContainer/Team";
-
+import CorporateTax from "../pages/Services/test";
 const router = createBrowserRouter(
   [
     {
@@ -17,6 +17,7 @@ const router = createBrowserRouter(
       element: <DefaultLayout />,
       children: [
         { path: "/", element: <HomePage /> },
+        { path: "/CorporateTax", element: <CorporateTax /> },
         { path: "/services", element: <Services /> },
         { path: "/about-us", element: <About /> },
         { path: "/career", element: <Careers/> },

@@ -1,5 +1,5 @@
 import { Box } from '@mui/system'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Typography from "@mui/material/Typography";
 import CallRoundedIcon from '@mui/icons-material/CallRounded';
 import HomeIcon from "@mui/icons-material/Home";
@@ -13,6 +13,11 @@ import { useNavigate } from 'react-router-dom';
 
 function Navbar2() {
     const navigate = useNavigate();
+    const [path, setPath] = useState('/');
+    useEffect(() => {
+        setPath(window.location.pathname);
+    }, [window.location.pathname])
+    console.log("path", path);
 
     const navItems = [
         { key: "Home", url: "/", icon: HomeIcon },
@@ -42,8 +47,8 @@ function Navbar2() {
             }}
         >
             {/* rgb(253, 185, 19) */}
-                {navItems.map((item) => (
-            <Box sx={{ margin:"0 5px" }}>
+            {navItems.map((item) => (
+                <Box sx={{ margin: "0 5px" }}>
                     <Button
                         onClick={() => {
                             navigate(String(item.url));
@@ -52,7 +57,7 @@ function Navbar2() {
                         key={item.key}
                         sx={{
                             height: "30px",
-                            color: "white ",
+                            color: "white",
                             "&:hover": {
                                 // backgroundColor: "rgba(208, 208, 208, 0.378)",
                                 // color: "#ffffff",
@@ -60,14 +65,17 @@ function Navbar2() {
                                 color: "rgb(253, 185, 19)"
                             },
                         }}
+                        // className='text-red-500'
+                    // className={path==item?.url ? 'text-red-500':''}
+                    style={path == item?.url? {color:'rgb(253, 185, 19)'}:{}} 
                     >
-                        {/* <IconButton> */}
-                        <item.icon sx={{ margin: "2px 6px" }} />
-                        {/* </IconButton> */}
-                        {item?.key}
+                        {/* <div style={path == item?.url? {color:'rgb(253, 185, 19)'}:{}} className={path == item?.url ? 'text-rgb(253, 185, 19)-500' : 'text-rgb(145, 137, 118)-500'}> */}
+                            <item.icon sx={{ margin: "2px 6px" }} />
+                            {item?.key}
+                        {/* </div> */}
                     </Button>
-            </Box>
-                ))}
+                </Box>
+            ))}
         </Box>
     )
 }

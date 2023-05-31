@@ -10,10 +10,7 @@
    z-index: -1;
    /* background-color:rgba(64, 64, 64, 0.495); */
 }
-/* .teams_boxesOut{
-    display: flex;
-    width: 100%;
-} */
+
 .teams_boxes{
     display: flex;
     width: 80%;
@@ -30,7 +27,7 @@
     top:25vh;
     left: 15%;
     /* color: rgb(253, 185, 19); */
-    color: rgb(189, 189, 189);
+    color: rgb(255, 255, 255);
     animation-name:animateDiv;
     animation-duration: 3.5s;
     width: 50%;
@@ -51,10 +48,8 @@
 }
 
 @keyframes animateDiv {
-    0%   {left: -80vw;}
-    65%  {left: 20%}
-    85%  {left: 14%}
-    100% {left:15%}
+    0%   {transform: scale(0.8);opacity: 0.2;}
+    100% {transform: scale(1);opacity: 1;}
 }
 
 @media(max-width:700px) {

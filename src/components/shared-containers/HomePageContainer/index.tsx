@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 //@ts-ignore
 import Video from "../../../assets/video/sample1.mp4";
-import React from "react";
+import React, { useEffect } from "react";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 import ContactUsContainer from "../ContactUsContainer";
 import OurTeamContainer from "../OurTeamContainer";
@@ -25,7 +25,13 @@ import { Careers } from "./Careers";
 import Temporary from "./Temporary";
 import { CSSTransition } from "react-transition-group";
 
+
 const HomePageContainer = () => {
+
+  // useEffect(()=>{
+  //   AOS.init();
+  // },[])
+
   const styl = {
     width: "22%",
     minWidth: "250px",
@@ -52,62 +58,63 @@ const HomePageContainer = () => {
       url: "",
       icon: ManageSearchIcon,
       desc: "Corporate tax is levied on the companies, whether domestic or foreign. In India, the Income Tax Act..",
-      title : "Corporate Tax"
+      title: "Corporate Tax"
     },
     {
       key: "About",
       url: "",
       icon: AssistantIcon,
       desc: "At AU, being one of the best Tax Litigation firms in Delhi, provide the best tax litigation services in Delhi",
-      title : "Income Tax Litigation Services"
+      title: "Income Tax Litigation Services"
     },
     {
       key: "Services",
       url: "",
       icon: GroupsIcon,
       desc: "As a firm of Chartered Accountants, we at AU focus on providing the best consultancy for meeting your tax compliances on time",
-      title:"Direct & Indirect Tax"
+      title: "Direct & Indirect Tax"
     },
     {
       key: "Contact Us",
       url: "",
       icon: SupervisedUserCircleIcon,
       desc: "We at AU help you in calculating your correct income tax payable or refundable",
-      title:"Income Tax Return Filings"
+      title: "Income Tax Return Filings"
     },
     {
       key: "Career",
       url: "",
       icon: InfoIcon,
       desc: "We are considered the best CA for NRI return filing in India and the best income tax consultant in Delhi",
-      title:"ITR Filing services at AU"
+      title: "ITR Filing services at AU"
     },
     {
       key: "Our Team",
       url: "",
       icon: ManageSearchIcon,
       desc: "This is the searvice description of the compnay that will be updated soon.",
-      title:"Procedure for Assessment"
+      title: "Procedure for Assessment"
     },
     {
       key: "Our Team",
       url: "",
       icon: ManageSearchIcon,
       desc: "This is the searvice description of the compnay that will be updated soon.",
-      title:"GST Consultancy Services"
+      title: "GST Consultancy Services"
     },
     {
       key: "Our Team",
       url: "",
       icon: TocRoundedIcon,
       desc: "AU is among the best GST registration service providers in Delhi. Our range of services makes it seamless for you to comply with tax policies.",
-      title:"GST Audit"
+      title: "GST Audit"
     },
   ];
+
+
   return (
     <>
-     
-      <Box sx={{ background: "white" }}>
+      <Box sx={{ background: "white" }} >
         <CardMedia
           component="video"
           sx={{
@@ -115,84 +122,76 @@ const HomePageContainer = () => {
             top: "59px",
             width: "100%",
             maxHeight: "500px",
-            backgroundColor: "#DBDFEA",
+            backgroundColor: "#ffffff",
             padding: "0px !important",
             margin: "0px !important",
             objectFit: "fill",
+            overflow: 'hidden',
+            filter:"brightness(60%)",
           }}
           src={Video}
           controls={false}
           autoPlay
           muted
-        ></CardMedia>
+        >
+          {/* HiksbdfkbasdasaS */}
+        </CardMedia>
+        <div className='animateTextForHome'>
+          We offer expert financial services, auditing, tax planning, consulting, accounting solutions, and reliable financial reporting for businesses and individuals.
+        </div>
         <img
           src="https://www.crowe.com/-/media/crowe/llp/main-images/advisory/main-header-full-advisory-overview-168034845.jpg?rev=0cccd6ff56694cf0b017364723fb46a9&w=1920&hash=DCBF62C3E6AD95066944FC58422F423E"
           className="img_css"
         />
-        {/* <video
-        style={{
-          top: "59px",
-          width: "100%",
-          maxHeight: "500px",
-          backgroundColor: "#DBDFEA",
-          padding: "0px !important",
-          margin: "0px !important",
-        }}
-        src={Video}
-        controls={false}
-        autoPlay
-        muted
-      ></video> */}
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            padding: "5% 5%",
+            padding: "5% 5% 2% 5%",
+            marginTop:"25px",
             backgroundColor: "#fff",
+            overflow: 'hidden',
           }}
         >
           <Typography
             variant="h4"
             sx={{
               width: "250px",
-              // height: "6px",
               borderRadius: 12,
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              // background: "rgb(253, 185, 19)",
             }}
           >
             Our Services
-            <Divider
-              sx={{
-                width: "250px",
-                marginTop: "5px",
-                height: "6px",
-                borderRadius: 12,
-                background: "rgb(253, 185, 19)",
-              }}
-            />
+            <Divider sx={{
+              width: "250px",
+              height: "6px",
+              borderRadius: 12,
+              margin: "5px 0 15px 0",
+              background: "rgb(253, 185, 19)",
+            }} />
           </Typography>
-       
+
         </Box>
 
         <Box
           sx={{
-            margin: "5% 5%",
-            marginTop : "0px",
+            margin: "0 5%",
             display: "flex",
             background: "#ffffff",
             alignItems: "center",
             justifyContent: "center",
             width: "90%",
             flexWrap: "wrap",
+            overflow: 'hidden',
           }}
         >
           {serviceItems?.map((data, index) => (
+            // data-aos="zoom-in"
             <Box sx={styl} className="cardDiv">
               {/* <IconButton> */}
               <data.icon
@@ -250,6 +249,7 @@ const HomePageContainer = () => {
                 >
                   <div> Read more</div>
                   <DoubleArrowRoundedIcon
+                    className="doblearrow"
                     style={{ fontSize: "20px", fontWeight: "bold" }}
                   />
                 </Typography>
@@ -280,7 +280,7 @@ const HomePageContainer = () => {
       </Box>
       <Analytics />
       {/* <Temporary/> */}
-      
+
       <Careers />
 
       <ContactUsContainer />
