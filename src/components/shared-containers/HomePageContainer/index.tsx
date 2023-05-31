@@ -107,7 +107,7 @@ const HomePageContainer = () => {
   return (
     <>
      
-      <Box sx={{ background: "white" }}>
+      <Box sx={{ background: "white" , overflow : "hidden"}}>
         <CardMedia
           component="video"
           sx={{
