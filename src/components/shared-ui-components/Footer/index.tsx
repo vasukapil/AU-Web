@@ -7,7 +7,7 @@ export const Footer: FC = (): ReactElement => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="text-gray-600 body-font bg-slate-500 from-indigo-500">
+    <footer className="text-white body-font p-6 bg-[#002d62] h- from-indigo-500">
       <div className="container px-5 py-6 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -47,7 +47,7 @@ export const Footer: FC = (): ReactElement => {
           </div>
         </div>
       </div>
-      <div className="bg-slate-500 ">
+      <div className="bg-slate-500 p-2 mt-4 w-full px-0">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-white text-sm text-center sm:text-left">
             © {year} AU Corporate —
