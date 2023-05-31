@@ -725,8 +725,39 @@ Types of TDS/TCS Return Forms
     `
   },
   {
-    title: 'Income Tax Return Filings',
+    title: ' GST Consultancy Services',
     markdownText: `
+    ## GST Consultancy Services
+
+Our strategic Goods and Services Tax (GST) Advisory services focus on our client's overall tax performance, creating significant opportunities to measure and gain efficiency, develop a more strategic approach to tax, and deliver prominent shareholder value. Through benchmarking regular performance, knowing best practices about companion and historical performance, and measuring the delta between substance and the potential of our client's tax department, AU gives a clear plan for transforming the tax operations into a Tax Competency Centre. We provide the best GST consulting services in India to our clients.
+
+Being the best GST expert in Delhi, we help our clients design and execute processes and technologies that improve the efficiency and effectiveness of their tax operations. We assess tax situations and develop strategic plans that include transaction structuring, business restructuring, and alternative filing positions. And, we ensure that whatever efforts our clients take will have a positive impact on the overall strategic objectives of their respective organizations.
+
+To satisfy the differing and day-to-day requirements of our clients, we offer GST Advisory services. We have a team of highly experienced GST tax consultants who undertake GST tax advisory services efficiently and ensure that your company's overall GST-related tax filing and advisory needs are met promptly. We assist you with the identification of changes to any long-term contracts, conducting tax-code mapping for all transactions, and reviewing the existing levels of GST tax compliance.
+
+Goods and Services Tax, which came into existence effective from 01.07.2017, subsumed plenty of indirect taxes such as VAT, central sales tax, service tax, excise duty, countervailing duty (CVD), and octroi duty. GST will have repercussions for every business in terms of tax rates, the overall incidence of tax, input tax credits, distribution of tax, evaluating costs, and fixing prices of goods and services.
+
+Businesses must ensure the following:
+
+- Correct classification of HSN and SAC codes and selection of applicable rates of tax (commonly from exempt to a maximum of 28%)
+- Determining the place of supply to ascertain the relevant state for GST compliances that help in charging GST under correct heads
+- Claiming eligible input tax credits and excluding or deferring ineligible input tax credits, as well as refunds or tax credits for exports
+- Compliance on inward supplies where taxability is under the reverse charge mechanism
+- Ensuring the filing of periodic and annual returns in each state (or for each registered person) based on applicability
+- Different rules for the valuation of supply in case of related persons, deemed distinct persons, agent and principals, and other various circumstances.
+
+### Our GST Advisory Services
+
+- Blueprint of GST applicability: Providing a complete blueprint of the GST framework and related compliances applicable to a particular client.
+- GST compliances: Periodic review of GST returns and tax computations along with the filing of returns to GST authorities for each registered person (including consideration of mismatches between vendors and customers and the client's records based on reconciliation statements prepared by the client)
+- GST operational assistance and retainer services: Addressing operational matters flowing out of GST implementation, vendors and consumers ecosystem care, and advisory services for obtaining advance rulings
+- GST Audit Services: Helping the clients in the annual GST audit in respect of each establishment of a registered person.
+- Internal review of all GST perspectives: Review of all processes from a GST perspective, including examination, validation, and acceptance by users of ERP-related GST controls
+- GST supply chain effectiveness review: We provide clients with insights on improving the supply chain, network optimization, warehousing, and logistics
+
+### Why choose AU for your GST Advisory Services?
+
+- We boast a highly qualified and dedicated team of professionals for delivering the best GST advisory services.
 
     `
   }
